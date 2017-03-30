@@ -28,3 +28,20 @@
 (require 'init-defaults)
 
 (require 'init-evil)
+
+(require 'init-theme)
+(require 'init-hlinum)
+(require 'init-webmode)
+(require 'init-flycheck)
+(require 'init-spaceline)
+(require 'init-ido)
+(require 'init-js2mode)
+(require 'init-projectile)
+(require 'init-neotree)
+(require 'init-magit)
+(require 'init-irony)
+(require 'init-origami)
+(require 'init-sass)
+(require 'init-markdown)
+
+(require 'init-custom)
