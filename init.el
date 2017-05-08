@@ -48,5 +48,21 @@
 (require 'init-sass)
 (require 'init-markdown)
 (require 'init-avy)
+;; JSX
+(use-package rjsx-mode
+  :ensure t
+  :defer 1
+  :mode "\\.jsx$")
+
+;; Tern
+(use-package tern
+  :ensure t
+  :defer 1
+  :init (autoload 'tern-mode "tern" nil t))
+
+(use-package company-tern
+  :ensure t
+  :defer 1
+  :config (add-to-list 'company-backends 'company-tern))
 
 (require 'init-custom)

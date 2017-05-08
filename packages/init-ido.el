@@ -4,13 +4,17 @@
     (ido-mode 1)
     (require 'ido-other-window)
     (use-package ido-vertical-mode
+      :ensure t
       :init (ido-vertical-mode 1))
     (use-package flx-ido
+      :ensure t
       :init (flx-ido-mode 1))
     (use-package ido-ubiquitous
+      :ensure t
       :init (ido-everywhere 1)
 	    (ido-ubiquitous-mode 1))
     (use-package smex
+      :ensure t
       :init (smex-initialize)
       :bind ("M-x" . smex)))
   (progn

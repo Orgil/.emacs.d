@@ -60,12 +60,6 @@
 ;; Anti-aliasing
 (setq mac-allow-anti-aliasing t)
 
-(use-package tern
-  :ensure t
-  :defer t
-  :diminish tern-mode
-  :config
-  (progn
-    (add-hook 'js2-mode-hook 'tern-mode)))
+(global-set-key [f5] '(lambda() (interactive) (load-file "~/.emacs.d/init.el")))
 
 (provide 'init-defaults)

@@ -1,6 +1,13 @@
 (use-package neotree
-  :ensure all-the-icons
+  :ensure t
   :init
+  (progn
+    (use-package all-the-icons
+      :ensure t
+    )
+  )
+  (setq-default neo-smart-open t)
+  (setq-default neo-autorefresh nil)
   (add-hook 'neotree-mode-hook
 	    (lambda ()
 	      (define-key evil-normal-state-local-map (kbd "i") 'neotree-enter-horizontal-split)
@@ -28,13 +35,14 @@
 	    (neotree-dir project-dir)
 	    (neotree-find file-name)))
 	(message "Could not find git project root."))))
+  (evil-set-initial-state 'neotree-mode 'normal)
   (global-set-key [f4] 'neotree-project-dir)
   (setq neo-hidden-regexp-list '("^\\." "\\.cs\\.meta$" "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "\\.git"))
   (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-  (setq-default neo-smart-open t)
   (setq projectile-switch-project-action 'neotree-projectile-action)
   (setq neo-show-hidden-files t)
   (setq neo-window-width 28)
+  (setq neo-show-auto-change-root 0)
   (defun neo-util--walk-dir (path)
     "Return the subdirectories and subfiles of the PATH."
     (let* ((full-path (neo-path--file-truename path)))
