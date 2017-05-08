@@ -40,7 +40,7 @@
 
 ;;; setting default font
 (set-face-attribute 'default nil
-  :family "Hack" :height 100 :weight 'normal)
+  :family "Hack" :height 120 :weight 'normal)
 
 ;;; highlight current line
 (global-hl-line-mode 1)

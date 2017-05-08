@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (hlinum evil-commentary evil-commentary-mode evil-visualstar evil-nerd-commenter evil-matchit evil-surround evil-leader evil use-package))))
+    (markdown-preview-mode hlinum evil-commentary evil-commentary-mode evil-visualstar evil-nerd-commenter evil-matchit evil-surround evil-leader evil use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
