@@ -9,6 +9,7 @@
 	(define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
 	(define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
 	(define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
+	(define-key evil-normal-state-map (kbd "SPC") 'avy-goto-word-1)
 
 	;;; j k navigation visual line
 	(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
@@ -55,7 +56,7 @@
   (use-package evil-surround
       :ensure t
       :config
-      (global-evil-surround-mode))
+      (global-evil-surround-mode 1))
 
   (use-package evil-matchit
       :ensure t

@@ -28,13 +28,17 @@
 (require 'init-defaults)
 
 (require 'init-evil)
+(require 'init-smartparens)
 
 (require 'init-theme)
+(require 'init-jsonmode)
+(require 'init-company)
 (require 'init-hlinum)
 (require 'init-webmode)
 (require 'init-flycheck)
 (require 'init-spaceline)
 (require 'init-ido)
+(require 'init-phpmode)
 (require 'init-js2mode)
 (require 'init-projectile)
 (require 'init-neotree)
@@ -43,5 +47,6 @@
 (require 'init-origami)
 (require 'init-sass)
 (require 'init-markdown)
+(require 'init-avy)
 
 (require 'init-custom)

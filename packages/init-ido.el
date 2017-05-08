@@ -2,6 +2,7 @@
   :init
   (progn
     (ido-mode 1)
+    (require 'ido-other-window)
     (use-package ido-vertical-mode
       :init (ido-vertical-mode 1))
     (use-package flx-ido
