@@ -25,6 +25,7 @@
 (blink-cursor-mode -1)
 
 (setq ns-use-native-fullscreen nil)
+(global-set-key (kbd "<s-f1>") 'ns-do-hide-emacs)
 
 ;;; no more type yes
 (defalias 'yes-or-no-p 'y-or-n-p)
