@@ -14,5 +14,7 @@
  '(font-lock-function-name-face ((t (:foreground "#faa36f"))))
  '(font-lock-keyword-face ((t (:foreground "#79d4d5"))))
  '(font-lock-string-face ((t (:foreground "#a4d3ab"))))
+ '(js2-object-property ((t (:foreground "#ffd996"))))
+ '(neo-dir-link-face ((t (:foreground "#7aabd4"))))
  '(web-mode-html-attr-name-face ((t (:foreground "#fce1ad"))))
  '(web-mode-html-tag-face ((t (:foreground "#7599ae")))))

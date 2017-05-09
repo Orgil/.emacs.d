@@ -31,6 +31,7 @@
 (require 'init-smartparens)
 
 (require 'init-theme)
+(require 'init-dired)
 (require 'init-jsonmode)
 (require 'init-company)
 (require 'init-hlinum)

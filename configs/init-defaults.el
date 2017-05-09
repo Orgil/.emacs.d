@@ -55,6 +55,9 @@
 ;; make both fringes 4 pixels wide
 (fringe-mode 4)
 
+(x-focus-frame nil)
+(add-to-list 'default-frame-alist '(fullscreen . fullboth))
+
 ;; dont use srgb color space
 (setq ns-use-srgb-colorspace nil)
 ;; Anti-aliasing
