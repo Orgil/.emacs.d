@@ -46,10 +46,16 @@
     :config
     (global-evil-leader-mode)
     (evil-leader/set-leader ",")
+		(defun switch-to-previous-buffer ()
+			"Switch to previously open buffer.
+			Repeated invocations toggle between the two most recently open buffers."
+			(interactive)
+			(switch-to-buffer (other-buffer (current-buffer) 1)))
     (evil-leader/set-key
       "gst" 'magit-status
 			"q" 'kill-buffer-and-window
 			"w" 'save-buffer
+			"," 'switch-to-previous-buffer
     )
   )
 

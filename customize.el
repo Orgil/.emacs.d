@@ -16,5 +16,6 @@
  '(font-lock-string-face ((t (:foreground "#a4d3ab"))))
  '(js2-object-property ((t (:foreground "#ffd996"))))
  '(neo-dir-link-face ((t (:foreground "#7aabd4"))))
+ '(rjsx-tag ((t (:foreground "#6391b3"))))
  '(web-mode-html-attr-name-face ((t (:foreground "#fce1ad"))))
  '(web-mode-html-tag-face ((t (:foreground "#7599ae")))))

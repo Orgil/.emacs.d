@@ -25,7 +25,6 @@
 (blink-cursor-mode -1)
 
 (setq ns-use-native-fullscreen nil)
-(toggle-frame-fullscreen)
 
 ;;; no more type yes
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -55,8 +54,8 @@
 ;; make both fringes 4 pixels wide
 (fringe-mode 4)
 
-(x-focus-frame nil)
-(add-to-list 'default-frame-alist '(fullscreen . fullboth))
+; (add-to-list 'default-frame-alist '(fullscreen . fullboth))
+; (x-focus-frame nil)
 
 ;; dont use srgb color space
 (setq ns-use-srgb-colorspace nil)

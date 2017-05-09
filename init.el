@@ -67,3 +67,4 @@
   :config (add-to-list 'company-backends 'company-tern))
 
 (require 'init-custom)
+(toggle-frame-fullscreen)
