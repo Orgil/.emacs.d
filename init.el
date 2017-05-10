@@ -48,13 +48,10 @@
 (require 'init-origami)
 (require 'init-sass)
 (require 'init-markdown)
+(require 'init-yasnippet)
 (require 'init-avy)
 ;; JSX
-(use-package rjsx-mode
-  :ensure t
-  :defer 1
-  :mode "\\.jsx$")
-
+(require 'init-rjsx)
 ;; Tern
 (use-package tern
   :ensure t

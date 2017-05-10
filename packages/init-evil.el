@@ -23,6 +23,10 @@
 																									(interactive)
 																									(evil-scroll-down nil)))
 	(define-key evil-normal-state-map (kbd "C-p") 'projectile-find-file)
+
+	(setq-default evil-shift-width 2)
+	(setq-default evil-shift-round nil)
+
 	;;; esc quits
 	(defun minibuffer-keyboard-quit ()
 		"Abort recursive edit.
